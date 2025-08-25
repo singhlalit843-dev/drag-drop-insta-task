@@ -1,0 +1,53 @@
+<div class="form-container">
+  <h2>User Registration</h2>
+
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <label>Full Name</label>
+      <input formControlName="fullName" type="text" />
+    </div>
+
+    <div class="form-row">
+      <label>Email</label>
+      <input formControlName="email" type="email" />
+    </div>
+
+    <div class="form-row">
+      <label>Phone</label>
+      <input formControlName="phone" type="number" />
+    </div>
+
+    <div class="form-row">
+      <label>Gender</label>
+      <select formControlName="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>Date of Birth</label>
+      <input formControlName="dob" type="date" />
+    </div>
+
+    <div class="form-row">
+      <label>Country</label>
+      <input formControlName="country" type="text" />
+    </div>
+
+    <div class="form-row">
+      <label>Address</label>
+      <textarea formControlName="address"></textarea>
+    </div>
+
+    <div class="form-row">
+      <label>Password</label>
+      <input formControlName="password" type="password" />
+    </div>
+
+    
+
+    <button type="submit">Register</button>
+  </form>
+</div>

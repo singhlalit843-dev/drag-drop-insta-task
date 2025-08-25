@@ -1,0 +1,9 @@
+<button (click)="downloadAsPDF()">Download as PDF</button>
+<div class="container">
+  <div 
+    cdkDrag 
+    class="draggable" 
+    *ngFor="let item of userData | keyvalue">
+    <strong>{{ item.key  | uppercase}}:</strong> {{ item.value }}
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  min-height: 500px;
+}
+
+.draggable {
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px dashed #999;
+  cursor: move;
+  width: 150px;
+}
