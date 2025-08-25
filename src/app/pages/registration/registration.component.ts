@@ -24,7 +24,7 @@ export class RegistrationComponent {
       dob: ['', Validators.required],
       country: ['', Validators.required],
       address: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      password: ['', [Validators.required, Validators.minLength(2)]],
     });
   }
 
