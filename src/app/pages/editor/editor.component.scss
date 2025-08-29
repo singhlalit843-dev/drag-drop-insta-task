@@ -1,15 +1,36 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-  min-height: 500px;
+  position: relative;
+  min-height: 600px;
+  padding: 20px;
 }
 
 .draggable {
+  border: 1px solid #aaa;
   padding: 10px;
-  background: #f4f4f4;
-  border: 1px dashed #999;
+  margin: 8px;
+  background: #f9f9f9;
   cursor: move;
-  width: 150px;
+  display: inline-block;
+}
+
+.print-btn {
+  position: fixed;
+  float: right;
+  right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.print-btn:hover {
+  background: #459dfc;
+}
+
+@media print {
+  button {
+    display: none !important;
+  }
+  .container {
+    position: relative !important;
+  }
 }
